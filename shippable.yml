@@ -5,7 +5,7 @@ install: pip install --use-mirrors -r requirements.txt
 env:
  global:
   - secure: vGN6q964CBfF7EDmL+1huLVm5wnnEmU/3widNtJP4Q77BTbbDbVFswqCMjKEyl20O9MSxBgL5BdCF4EY8dHYfQKVGfw3zKHWB4KoeXs70oI5mVfUE6RDHN26uF9uzDtR8d910OvybNLtQ2ekQbZrObUsl+Mwlzw4RBxTjXNbRQm2PeJZnxERidyS5fx4Nma021sLLVVkJWFkC//+G3SfEwHodiY+KaCKSuEFxu9cwtnhx+8f4lNTTiKCk+7t+3pd5/bET2UOS7WNahRUILI1hQNAWVvOPP8lrq7X/1pWdfPF6pziiJVrZx/fkrGI9SGIigF4+RlTzCVqRuwNUrR6gg==
-  - SLACK_ORG=test05 PROJECT=postgresql-buildsample
+  - SLACK_ORG=test05  PROJECT=postgresql-buildsample
 before_script: 
   - psql -c 'drop database if exists foodb2;' -U postgres -w
   - psql -c 'create database foodb2;' -U postgres -w
